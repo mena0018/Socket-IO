@@ -1,9 +1,13 @@
 import { FC } from 'react';
+import Form from '@/components/Form';
+import Chat from '@/components/Chat';
 
 const Home: FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Home Page</h1>
+    <main className='w-full max-w-2xl mx-auto min-h-screen flex gap-12 flex-col items-center pt-12 '>
+      <h1 className='text-3xl font-semibold'>Welcome to ChatBox</h1>
+      <Form />
+      <Chat />
     </main>
   );
 };
